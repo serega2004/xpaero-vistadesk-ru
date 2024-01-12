@@ -133,6 +133,11 @@ namespace desk
             Process.Start("rundll32.exe", "shell32.dll,Options_RunDLL");
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
 

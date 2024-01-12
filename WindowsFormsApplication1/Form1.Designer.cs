@@ -43,7 +43,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
@@ -59,6 +58,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -97,7 +97,7 @@
             this.linkLabel11.Size = new System.Drawing.Size(151, 23);
             this.linkLabel11.TabIndex = 5;
             this.linkLabel11.TabStop = true;
-            this.linkLabel11.Text = "Folder Options";
+            this.linkLabel11.Text = "Свойства папки";
             this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked);
             // 
             // linkLabel10
@@ -109,10 +109,10 @@
             this.linkLabel10.LinkColor = System.Drawing.Color.White;
             this.linkLabel10.Location = new System.Drawing.Point(25, 456);
             this.linkLabel10.Name = "linkLabel10";
-            this.linkLabel10.Size = new System.Drawing.Size(137, 15);
+            this.linkLabel10.Size = new System.Drawing.Size(169, 15);
             this.linkLabel10.TabIndex = 4;
             this.linkLabel10.TabStop = true;
-            this.linkLabel10.Text = "Ease of Access";
+            this.linkLabel10.Text = "Специальные возможности";
             this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
             // 
             // linkLabel8
@@ -124,10 +124,10 @@
             this.linkLabel8.LinkColor = System.Drawing.Color.White;
             this.linkLabel8.Location = new System.Drawing.Point(25, 431);
             this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(137, 15);
+            this.linkLabel8.Size = new System.Drawing.Size(169, 15);
             this.linkLabel8.TabIndex = 4;
             this.linkLabel8.TabStop = true;
-            this.linkLabel8.Text = "Taskbar and Start Menu";
+            this.linkLabel8.Text = "Панель задач и меню \"Пуск\"";
             this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked_1);
             // 
             // label10
@@ -138,9 +138,9 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(25, 406);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 15);
+            this.label10.Size = new System.Drawing.Size(64, 15);
             this.label10.TabIndex = 3;
-            this.label10.Text = "See also";
+            this.label10.Text = "См. также";
             // 
             // linkLabel9
             // 
@@ -154,7 +154,7 @@
             this.linkLabel9.Size = new System.Drawing.Size(137, 33);
             this.linkLabel9.TabIndex = 2;
             this.linkLabel9.TabStop = true;
-            this.linkLabel9.Text = "Change ClearType Tuning Settings";
+            this.linkLabel9.Text = "Изменить параметры настройки ClearType";
             this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
             // 
             // label9
@@ -165,9 +165,9 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(25, 15);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 15);
+            this.label9.Size = new System.Drawing.Size(48, 15);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Tasks";
+            this.label9.Text = "Задачи";
             // 
             // label2
             // 
@@ -176,9 +176,10 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
             this.label2.Location = new System.Drawing.Point(19, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 21);
+            this.label2.Size = new System.Drawing.Size(354, 21);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Personalize appearance and sounds";
+            this.label2.Text = "Настройка внешнего вида и звуковых эффектов";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // linkLabel2
             // 
@@ -188,10 +189,10 @@
             this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.linkLabel2.Location = new System.Drawing.Point(54, 54);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(172, 15);
+            this.linkLabel2.Size = new System.Drawing.Size(149, 15);
             this.linkLabel2.TabIndex = 6;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "&Window Color and Appearance";
+            this.linkLabel2.Text = "Ц&вет и внешний вид окон";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label3
@@ -200,7 +201,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(430, 15);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Fine tune the color and style of your windows.";
+            this.label3.Text = "Настройка цвета и стиля для отображаемых окон.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // linkLabel3
@@ -209,22 +210,23 @@
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.linkLabel3.Location = new System.Drawing.Point(54, 103);
+            this.linkLabel3.Location = new System.Drawing.Point(54, 94);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(171, 15);
+            this.linkLabel3.Size = new System.Drawing.Size(248, 15);
             this.linkLabel3.TabIndex = 9;
             this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Des&ktop Background and Icons";
+            this.linkLabel3.Text = "&Фоновый рисунок и значки рабочего стола";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(54, 123);
+            this.label4.Location = new System.Drawing.Point(54, 114);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(451, 30);
+            this.label4.Size = new System.Drawing.Size(451, 45);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Choose from available backgrounds or colors or use one of your own pictures to de" +
-                "corate the desktop. You can change the appearance of the icons or disable them.";
+            this.label4.Text = "Выберите один из имеющихся фоновых рисунков либо используйте собственные рисунки " +
+                "или фотоснимки для оформления рабочего стола. Вы также можете изменить оформлени" +
+                "е значков или отключить их.";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
@@ -267,22 +269,13 @@
             // 
             this.label1.Location = new System.Drawing.Point(54, 457);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(451, 34);
+            this.label1.Size = new System.Drawing.Size(451, 47);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Adjust your monitor resolution, which changes the view so more or fewer items fit" +
-                " on the screen. You can also control monitor flicker (refresh rate).";
+            this.label1.Text = "Настройка разрешающей способности экрана, позволяет регулировать масштаб и количе" +
+                "ство отображаемых объектов. Позволяет также регулировать мерцание монитора (част" +
+                "оту обновления).";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(54, 382);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(451, 49);
-            this.label8.TabIndex = 10;
-            this.label8.Text = resources.GetString("label8.Text");
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Click += new System.EventHandler(this.label4_Click);
             // 
             // linkLabel1
             // 
@@ -292,10 +285,10 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.linkLabel1.Location = new System.Drawing.Point(54, 439);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(90, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(119, 15);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Displa&y Settings";
+            this.linkLabel1.Text = "Параметры д&исплея";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label7
@@ -304,8 +297,8 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(451, 36);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Pick a different mouse pointer. You can also change how the mouse pointer looks d" +
-                "uring such activities as clicking and selecting.";
+            this.label7.Text = "Выберите другой указатель мыши. Кроме того, можно изменить вид указателя мыши во " +
+                "время таких операций, как щелчок или выделение.";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label7.Click += new System.EventHandler(this.label4_Click);
             // 
@@ -317,10 +310,10 @@
             this.linkLabel7.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.linkLabel7.Location = new System.Drawing.Point(54, 364);
             this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(44, 15);
+            this.linkLabel7.Size = new System.Drawing.Size(35, 15);
             this.linkLabel7.TabIndex = 9;
             this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "The&me";
+            this.linkLabel7.Text = "&Тема";
             this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             // 
             // label6
@@ -329,8 +322,8 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(451, 36);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Change which sounds are heard when you do everything from getting e-mail to empty" +
-                "ing your Recycle Bin.";
+            this.label6.Text = "Настройка звуковых эффектов, сопровождающих различные события - например, получен" +
+                "ие сообщения электронной почты или очистку корзины.";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label6.Click += new System.EventHandler(this.label4_Click);
             // 
@@ -342,21 +335,19 @@
             this.linkLabel6.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.linkLabel6.Location = new System.Drawing.Point(54, 300);
             this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(89, 15);
+            this.linkLabel6.Size = new System.Drawing.Size(101, 15);
             this.linkLabel6.TabIndex = 9;
             this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "Mouse Po&inters";
+            this.linkLabel6.Text = "Указатели &мыши";
             this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
             // 
             // label5
             // 
             this.label5.Location = new System.Drawing.Point(54, 181);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(451, 48);
+            this.label5.Size = new System.Drawing.Size(457, 48);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Change your screen saver or adjust when it displays. A screen saver is a picture " +
-                "or animation that covers your screen and appears when your computer is idle for " +
-                "a set period of time.";
+            this.label5.Text = resources.GetString("label5.Text");
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label5.Click += new System.EventHandler(this.label4_Click);
             // 
@@ -379,10 +370,10 @@
             this.linkLabel5.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.linkLabel5.Location = new System.Drawing.Point(54, 237);
             this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(46, 15);
+            this.linkLabel5.Size = new System.Drawing.Size(39, 15);
             this.linkLabel5.TabIndex = 9;
             this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Sou&nds";
+            this.linkLabel5.Text = "&Звуки";
             this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // pictureBox8
@@ -404,10 +395,10 @@
             this.linkLabel4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.linkLabel4.Location = new System.Drawing.Point(54, 163);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(73, 15);
+            this.linkLabel4.Size = new System.Drawing.Size(108, 15);
             this.linkLabel4.TabIndex = 9;
             this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "&Screen Saver";
+            this.linkLabel4.Text = "&Экранная заставка";
             this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // pictureBox7
@@ -447,7 +438,7 @@
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::desk.Properties.Resources.IconGroup2;
-            this.pictureBox4.Location = new System.Drawing.Point(23, 103);
+            this.pictureBox4.Location = new System.Drawing.Point(23, 94);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(24, 24);
             this.pictureBox4.TabIndex = 8;
@@ -464,6 +455,18 @@
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(54, 382);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(451, 49);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Настройка тем. Темы позволяют одновременно изменять множество наглядных и звуковы" +
+                "х элементов: меню, значки, фоновые рисунки, заставки экрана, указатели мыши, зву" +
+                "ковое сопровождение событий.";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label8.Click += new System.EventHandler(this.label4_Click);
             // 
             // Form1
             // 
@@ -482,7 +485,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Personalization";
+            this.Text = "Персонализация";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -520,7 +523,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.LinkLabel linkLabel7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label1;
@@ -532,6 +534,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.LinkLabel linkLabel11;
         private System.Windows.Forms.LinkLabel linkLabel10;
+        private System.Windows.Forms.Label label8;
     }
 }
 
